@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lonely.alldemoo.MainActivity" >
+
+    <TextView
+        android:id="@+id/id_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/hello_world" />
+    
+    <FrameLayout 
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_tv"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        ></FrameLayout>
+    <include 
+        android:id="@+id/id_bottom"
+        layout="@layout/bottom_panel_layout"/>
+
+</RelativeLayout>
